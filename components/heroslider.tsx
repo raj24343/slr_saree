@@ -41,23 +41,23 @@ export default function HeroSlider() {
   return (
     <section className="w-full relative h-[500px] md:h-[700px] overflow-hidden">
       <AnimatePresence mode="wait">
-        {slides.map((slide, i) => (
+      {slides.map((slide, i) => (
           i === index && (
             <motion.div
-              key={i}
+          key={i}
               initial={{ opacity: 0, scale: 1.1 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.9 }}
               transition={{ duration: 1 }}
               className="absolute inset-0"
-            >
-              <Image
-                src={slide.img}
+        >
+          <Image
+            src={slide.img}
                 alt={slide.title}
-                fill
-                className="object-cover"
-                priority={i === 0}
-              />
+            fill
+            className="object-cover"
+            priority={i === 0}
+          />
               
               {/* Gradient Overlay */}
               <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
@@ -88,7 +88,7 @@ export default function HeroSlider() {
                     </Link>
                   </motion.div>
                 </div>
-              </div>
+        </div>
             </motion.div>
           )
         ))}
@@ -106,7 +106,7 @@ export default function HeroSlider() {
                 : "bg-white/40 hover:bg-white/60"
             }`}
           />
-        ))}
+      ))}
       </div>
     </section>
   );

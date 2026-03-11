@@ -276,7 +276,7 @@ export const products: Product[] = [
     careInstructions: "wash by rolling machine"
   },
   {
-    id: "2",
+    id: "19",
     title: "Semi kanchi Pattu saree",
     price: "₹2500",
     originalPrice: "₹5000",
@@ -289,10 +289,20 @@ export const products: Product[] = [
     material: "semi pattu sarees",
     careInstructions: "wash by rolling machine"
   },
-  
-
- 
-    
+  {
+    id: "2",
+    title: "Banaras viscous silk saree",
+    price: "₹1900",
+    originalPrice:"₹2400",
+    images: ["/image copy.png", "/image copy 2.png", "/image copy 5.png", "/image.png"],
+    category: "Fancy sarees",
+    description: "Banaras viscose silk sarees are known for their rich look and smooth texture. Designed with traditional Banarasi motifs, intricate weaving, and elegant borders, these sarees offer a luxurious silk finish with lightweight comfort. Perfect for weddings, festive occasions, and special events, they give a graceful and timeless appeal at an affordable price.",
+    inStock: true,
+    featured: true,
+    discount: 21,
+    material: "Banaras fancy sarees",
+    careInstructions: "Dry wash only"
+  },    
 
 ];
 

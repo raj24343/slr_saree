@@ -35,7 +35,7 @@ export default function RootLayout({
       >
         <CartProvider>
           <WishlistProvider>
-            {children}
+        {children}
           </WishlistProvider>
         </CartProvider>
       </body>

@@ -46,14 +46,14 @@ export default function Navbar() {
             whileTap={{ scale: 0.95 }}
             className="flex items-center cursor-pointer"
           >
-            <Image 
-              src="/image.png"
-              alt="Company Logo"
+          <Image 
+            src="/image.png"
+            alt="Company Logo"
               width={150}
               height={150}
-              priority
+            priority
               className="w-32 md:w-40"
-            />
+          />
           </motion.div>
         </Link>
 
@@ -107,35 +107,35 @@ export default function Navbar() {
             >
               <motion.span
                 whileHover={{ scale: 1.1 }}
-                className="
-                  relative
+              className="
+                relative
                   font-title
+                bg-gradient-to-r 
+                from-[#ffd56b] 
+                via-[#fff3b0] 
+                to-[#d4af37] 
+                bg-clip-text 
+                text-transparent
+                transition 
+                duration-300
+              "
+            >
+              {/* animated underline */}
+              <span
+                className="
+                  absolute 
+                  left-0 
+                  -bottom-1 
+                  w-0 
+                  h-[2px] 
                   bg-gradient-to-r 
-                  from-[#ffd56b] 
-                  via-[#fff3b0] 
-                  to-[#d4af37] 
-                  bg-clip-text 
-                  text-transparent
-                  transition 
-                  duration-300
+                  from-[#ffeb9c] 
+                  to-[#d4af37]
+                  group-hover:w-full
+                  transition-all
+                  duration-500
                 "
-              >
-                {/* animated underline */}
-                <span
-                  className="
-                    absolute 
-                    left-0 
-                    -bottom-1 
-                    w-0 
-                    h-[2px] 
-                    bg-gradient-to-r 
-                    from-[#ffeb9c] 
-                    to-[#d4af37]
-                    group-hover:w-full
-                    transition-all
-                    duration-500
-                  "
-                />
+              />
                 {item.label}
               </motion.span>
             </Link>
